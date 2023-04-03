@@ -1,6 +1,7 @@
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
 
 # E-posta sunucusu ve bağlantı bilgileri
 smtp_server = "smtp.yandex.com.tr"
@@ -13,6 +14,7 @@ sender_password = "hyuulbczqfopjnuy"
 # E-posta alıcısı bilgileri
 receiver_email = "149erdem@gmail.com"
 
+
 # E-posta mesajı oluşturma
 msg = MIMEMultipart()
 msg['From'] = sender_email
@@ -21,6 +23,12 @@ msg['Subject'] = "Deneme E-postası"
 
 body = "Merhaba, bu bir deneme e-postasıdır."
 msg.attach(MIMEText(body, 'plain'))
+
+# E-posta ekleri
+with open("./42.png", "rb") as f:
+    img_data = f.read()
+    image = MIMEImage(img_data, name="42.png")
+    msg.attach(image)
 
 # SMTP sunucusuna bağlanma ve e-posta gönderme
 try:
