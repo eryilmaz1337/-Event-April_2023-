@@ -36,12 +36,6 @@ cd -Event-April_2023-</code></pre>
         <li>Required software and tools (may vary depending on the specified projects)</li>
     </ul>
     <h2 id="kullanim">Kullanım</h2>
-    <p>Her proje, kendi talimat seti ile ayrı bir dizin içerisinde yer almaktadır. Çalışmak istediğiniz proje dizinine gidin ve verilen talimatları izleyin.</p>
-    <p>Örnek:</p>
-    <pre><code>cd project1
-# README.md dosyasındaki talimatları izleyin</code></pre>
-    <p>Each project is located in a separate directory with its own set of instructions. Navigate to the project directory you want to work on and follow the provided instructions.</p>
-    <p>Example:</p>
-    <pre><code>cd project1
+    <p>PDF'i inceleyebilirsiniz</p>
 </body>
 </html>
